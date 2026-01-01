@@ -1,0 +1,14 @@
+/* 30-slides.css
+   Slide-specific overrides live here.
+
+   The app sets these attributes on <html>:
+     html[data-slide="slide-id"]
+     html[data-chapter="chapter-id"]
+
+   Examples:
+
+   html[data-slide="timeline"] .some-class { ... }
+   html[data-chapter="gir"] .some-class { ... }
+
+   Keep this file LAST in the import order so overrides win.
+*/

@@ -1,0 +1,637 @@
+/* Main Content Area */
+        .main-content {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide-counter {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            font-size: 0.9rem;
+            color: var(--base);
+            font-weight: 500;
+            z-index: 10;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 4rem 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0;
+            transform: translateX(50px);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            pointer-events: none;
+            overflow-y: auto;
+        }
+
+        .slide.active {
+            opacity: 1;
+            transform: translateX(0);
+            pointer-events: auto;
+        }
+
+        .slide.title-slide {
+            background: linear-gradient(135deg, var(--primary) 0%, #2a4270 100%);
+            color: var(--white);
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slide.title-slide h1 {
+            color: var(--white);
+            font-size: 3.5rem;
+            max-width: 900px;
+        }
+
+        .slide.title-slide .subtitle {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-top: 1.5rem;
+            max-width: 700px;
+        }
+
+        .slide.title-slide .meta {
+            margin-top: 3rem;
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .slide.title-slide .badge-row {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            justify-content: center;
+        }
+
+        .slide.title-slide .stat-badge {
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .slide.title-slide .stat-badge .number {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--accent-warm);
+        }
+
+        .slide.title-slide .stat-badge .label {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 0.25rem;
+        }
+
+        .slide h1 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 3.2rem;
+            font-weight: 600;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        .slide h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 2.4rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        .slide h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--primary);
+        }
+
+        .slide p {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            max-width: 900px;
+        }
+
+        .slide ul {
+            list-style: none;
+            font-size: 1.15rem;
+            line-height: 1.7;
+            max-width: 900px;
+        }
+
+        .slide li {
+            margin-bottom: 0.6rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .slide li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: 700;
+        }
+
+        .big-number {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 7rem;
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .medium-number {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 4.5rem;
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box {
+            background: var(--light-gray);
+            border-left: 4px solid var(--secondary);
+            padding: 1.25rem 1.75rem;
+            margin: 1.5rem 0;
+            max-width: 900px;
+        }
+
+        .highlight-box h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box p {
+            font-size: 1.05rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background: var(--white);
+            border: 2px solid var(--light-gray);
+            padding: 1.25rem;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .card:hover {
+            border-color: var(--accent-cool);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .icon-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.75rem;
+            height: 2.75rem;
+            border-radius: 50%;
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 0.75rem;
+        }
+
+        .trigger-category {
+            background: var(--light-gray);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .trigger-category h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .trigger-category .triggers {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin: 0.5rem 0;
+        }
+
+        .trigger-category p {
+            font-size: 0.95rem;
+            color: var(--base);
+        }
+
+        .trigger-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--light-gray);
+            border-radius: 6px;
+            margin-bottom: 0.75rem;
+        }
+
+        .trigger-number {
+            flex-shrink: 0;
+            width: 2.25rem;
+            height: 2.25rem;
+            border-radius: 50%;
+            background: var(--secondary);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .trigger-text {
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        .trigger-text strong {
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 2rem 0;
+            padding: 2rem 0;
+        }
+
+        .timeline-line {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, var(--accent-cool), var(--accent-warm), var(--secondary));
+        }
+
+        .timeline-items {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            z-index: 1;
+        }
+
+        .timeline-item {
+            text-align: center;
+            max-width: 160px;
+        }
+
+        .timeline-dot {
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 50%;
+            background: var(--primary);
+            margin: 0 auto 0.75rem;
+            border: 3px solid var(--white);
+            box-shadow: 0 0 0 2px var(--primary);
+        }
+
+        .timeline-label {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-desc {
+            font-size: 0.8rem;
+            color: var(--base);
+            line-height: 1.4;
+        }
+
+        .scenario-box {
+            background: var(--white);
+            border: 3px solid var(--light-gray);
+            border-radius: 8px;
+            padding: 1.75rem;
+            margin: 1.5rem 0;
+            max-width: 900px;
+        }
+
+        .scenario-box.positive {
+            border-color: var(--accent-cool);
+        }
+
+        .scenario-box.negative {
+            border-color: var(--base);
+        }
+
+        .scenario-label {
+            display: inline-block;
+            padding: 0.35rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+        }
+
+        .scenario-label.positive {
+            background: var(--accent-cool);
+            color: var(--white);
+        }
+
+        .scenario-label.negative {
+            background: var(--base);
+            color: var(--white);
+        }
+
+        .scenario-box h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .scenario-box p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 0.5rem;
+        }
+
+        .citation {
+            font-size: 0.75rem;
+            color: var(--base);
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        sup {
+            cursor: help;
+            color: var(--base);
+            font-weight: 600;
+            font-size: 0.5em;
+        }
+
+        .key-stat {
+            display: inline-block;
+            padding: 0.4rem 1.25rem;
+            background: var(--secondary);
+            color: var(--white);
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.75rem;
+            font-weight: 600;
+            border-radius: 6px;
+            margin: 0.75rem 0;
+        }
+
+        .emphasis {
+            color: var(--secondary);
+            font-weight: 700;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .summary-table {
+            font-size: 0.85rem;
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .summary-table th {
+            background: var(--primary);
+            color: var(--white);
+            padding: 0.6rem 0.75rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .summary-table td {
+            padding: 0.5rem 0.75rem;
+            border-bottom: 1px solid var(--light-gray);
+            vertical-align: top;
+        }
+
+        .summary-table tr:hover {
+            background: var(--light-gray);
+        }
+
+        .citation-table {
+            font-size: 0.8rem;
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .citation-table th {
+            background: var(--primary);
+            color: var(--white);
+            padding: 0.5rem 0.6rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .citation-table td {
+            padding: 0.4rem 0.6rem;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .citation-table tr:hover {
+            background: var(--light-gray);
+        }
+
+        .citation-table a {
+            color: var(--accent-cool);
+            text-decoration: none;
+        }
+
+        .citation-table a:hover {
+            text-decoration: underline;
+            color: var(--secondary);
+        }
+
+        .not-list li:before {
+            content: "✗";
+            color: var(--base);
+        }
+
+        .check-list li:before {
+            content: "✓";
+            color: var(--accent-cool);
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid var(--accent-warm);
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            max-width: 900px;
+        }
+
+        .tooltip {
+            position: relative;
+            border-bottom: 1px dotted var(--base);
+            cursor: help;
+        }
+
+        .tooltip:hover::after {
+            content: attr(data-tip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--light-gray);
+            color: var(--ink);
+            padding: 0.5rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            z-index: 100;
+            width: max-content;
+            max-width: 200px;
+            white-space: normal;
+        }
+
+        .maryland-badge {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--white);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Decision question item - centered alignment */
+        .question-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--white);
+            border: 2px solid var(--light-gray);
+            border-radius: 6px;
+            margin-bottom: 0.75rem;
+        }
+
+        .question-number {
+            flex-shrink: 0;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            background: var(--primary);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .question-text {
+            font-size: 1.05rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        /* Learning objective item */
+        .objective-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .objective-number {
+            flex-shrink: 0;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background: var(--accent-cool);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .objective-text {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            padding-top: 0.15rem;
+        }
+
+        /* Scrollbar styling for nav */
+        .nav-sidebar::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .nav-sidebar::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-sidebar::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 3px;
+        }
+
+        .nav-sidebar::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        @media print {
+            .nav-sidebar {
+                display: none;
+            }
+            .slide-counter {
+                display: none;
+            }
+            .slide {
+                position: relative;
+                page-break-after: always;
+                opacity: 1;
+                transform: none;
+                pointer-events: auto;
+            }
+        }
