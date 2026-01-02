@@ -23,6 +23,9 @@
       "title": "Overview",
       "slides": [
         {
+          "file": "slides/overview/changing-medigap.md"
+        },
+        {
           "file": "slides/overview/gir-defined.md"
         },
         {
@@ -45,7 +48,7 @@
       "title": "GIR Triggers",
       "slides": [
         {
-          "file": "slides/triggers/trigger-categories.md"
+          "file": "slides/triggers/qualifying-events.md"
         },
         {
           "file": "slides/triggers/coverage-loss.md"
@@ -57,10 +60,13 @@
           "file": "slides/triggers/trial-rights.md"
         },
         {
-          "file": "slides/triggers/part-d.md"
+          "file": "slides/triggers/for-cause.md"
         },
         {
-          "file": "slides/triggers/trigger-summary.md"
+          "file": "slides/triggers/other.md"
+        },
+        {
+          "file": "slides/triggers/quick-reference.md"
         }
       ],
       "folder": "triggers"

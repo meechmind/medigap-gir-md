@@ -13,6 +13,6 @@ hidden: false
 <p>Held a Medigap Plan F for 2 years. Receives notice her insurance company has been declared insolvent by the state; coverage terminates in 30 days.</p>
 <h3 style="margin-top: 1rem;">Result</h3>
 <p>Dorothy can purchase a new Medigap policy without answering health questions—<em>even though she had major surgery last year</em> that would normally result in underwriting denial.<sup>23</sup></p>
-<p class="citation">Trigger 5: Medigap coverage ending due to issuer insolvency</p>
+<p class="citation">Trigger: Medigap coverage ending due to issuer insolvency</p>
 </div>
 

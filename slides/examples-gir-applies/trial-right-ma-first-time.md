@@ -13,6 +13,6 @@ hidden: false
 <p>Enrolled directly in a Medicare Advantage PPO. After 8 months, unhappy with restrictions and limited provider network. Wants Original Medicare with Medigap.</p>
 <h3 style="margin-top: 1rem;">Result</h3>
 <p>Because Sandra is using the "new to Medicare" trial right, she can purchase <span class="emphasis">ANY Medigap plan</span> from <span class="emphasis">ANY company</span> without underwriting.<sup>21</sup></p>
-<p class="citation">Trigger 7: First enrolled in Part B at 65+, chose MA immediately, within 12 months</p>
+<p class="citation">Trigger: First enrolled in Part B at 65+, chose MA immediately, within 12 months</p>
 </div>
 

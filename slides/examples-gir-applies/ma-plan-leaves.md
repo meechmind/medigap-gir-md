@@ -13,6 +13,6 @@ hidden: false
 <p>Enrolled in a Medicare Advantage HMO. In September, receives notice plan will no longer serve his county starting January 1 due to network issues.</p>
 <h3 style="margin-top: 1rem;">Result</h3>
 <p>Robert has guaranteed issue rights. He can return to Original Medicare and purchase a Medigap policy without health questions through early March.<sup>20</sup></p>
-<p class="citation">Trigger 2: Plan discontinuing service in geographic area</p>
+<p class="citation">Trigger: Plan discontinuing service in geographic area</p>
 </div>
 

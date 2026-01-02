@@ -2,7 +2,7 @@
 id: plan-problems
 label: Plan Problems
 title: Plan Problems Triggers
-hidden: false
+hidden: true
 ---
 
 <div class="gir-triggers">
