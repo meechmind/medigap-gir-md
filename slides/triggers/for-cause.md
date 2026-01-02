@@ -32,3 +32,9 @@ Triggers based on the conduct or status of the insurance carrier.
         </div>
     </div>
 </div>
+
+<div class="card">
+    <p style="margin-bottom: 0">
+        GIR timelines vary. See <a href="#" class="inline-slide-link" data-slide-id="quick-reference">Quick Reference</a>.
+    </p>
+</div>

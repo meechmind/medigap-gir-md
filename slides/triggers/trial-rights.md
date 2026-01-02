@@ -33,5 +33,5 @@ There are specific triggers designed to allow beneficiaries to try Medicare Adva
 </div>
 
 <div class="card">
-    <p style="margin-bottom: 0">GIR begins 60 days before disenrollment; ends 63 days after</p>
+    <p style="margin-bottom: 0">GIR begins 60 days before disenrollment and ends 63 days after disenrollment.</p>
 </div>

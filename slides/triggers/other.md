@@ -26,5 +26,7 @@ hidden: false
 </div>
 
 <div class="card">
-    <p style="margin-bottom: 0">GIR begins 60 days before disenrollment; ends 63 days after</p>
+    <p style="margin-bottom: 0">
+        GIR timelines vary. See <a href="#" class="inline-slide-link" data-slide-id="quick-reference">Quick Reference</a>.
+    </p>
 </div>

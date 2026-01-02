@@ -5,18 +5,18 @@
     "notes": "Slides are Markdown files with optional frontmatter. Raw HTML in Markdown is supported for advanced layouts."
   },
   "chapters": [
-    {
-      "id": "welcome",
+     {
+      "id": "home",
       "title": "Welcome",
       "slides": [
         {
-          "file": "slides/welcome/title.md"
+          "file": "slides/home/title.md"
         },
         {
-          "file": "slides/welcome/objectives.md"
+          "file": "slides/home/objectives.md"
         }
       ],
-      "folder": "welcome"
+      "folder": "home"
     },
     {
       "id": "introduction",
@@ -73,7 +73,7 @@
     },
     {
       "id": "examples-gir-applies",
-      "title": "Examples: GIR Applies",
+      "title": "Scenarios: GIR Applies",
       "slides": [
         {
           "file": "slides/examples-gir-applies/retiree-loses-coverage.md"
@@ -95,7 +95,7 @@
     },
     {
       "id": "examples-no-gir",
-      "title": "Examples: No GIR",
+      "title": "Scenarios: No GIR",
       "slides": [
         {
           "file": "slides/examples-no-gir/after-12-month-window.md"

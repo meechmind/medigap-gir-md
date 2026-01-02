@@ -31,9 +31,8 @@ Policyholders have a GIR if they lose certain types of coverage <span class="emp
         </div>
     </div>
 </div>
-    <div class="card">
+<div class="card">
     <p style="margin-bottom: 0">
         GIR timelines vary. See <a href="#" class="inline-slide-link" data-slide-id="quick-reference">Quick Reference</a>.
     </p>
-    </div>
 </div>
