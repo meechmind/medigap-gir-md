@@ -1,6 +1,6 @@
 ---
 id: md-enhancements
-label: Maryland Enhancements
+label: Maryland Protections
 title: Maryland's Additional Protections
 hidden: false
 ---

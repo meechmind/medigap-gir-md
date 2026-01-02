@@ -22,10 +22,10 @@ hidden: false
             <li>Cannot deny your application</li>
         </ul>
     </div>
-    <div class="card" style="border-left: 4px solid var(--accent-cool);">
-        <p style="font-size: 1.35rem; color: var(--base); text-align: left;">GIRs protect Medicare beneficiaries during <em>vulnerable transition periods</em> when they lose other coverage.</p>
-    </div>
+    
 </div>
-
+<div class="card" style="margin-top: 1rem; padding-bottom: 0rem">
+    <p style="font-size: 1.1rem; color: var(--base);">GIRs protect Medicare beneficiaries during <em>vulnerable transition periods</em> when they lose other coverage.</p>
+</div>
 
 

@@ -7,7 +7,7 @@
   "chapters": [
     {
       "id": "welcome",
-      "title": "Introduction",
+      "title": "Welcome",
       "slides": [
         {
           "file": "slides/welcome/title.md"
@@ -19,29 +19,29 @@
       "folder": "welcome"
     },
     {
-      "id": "overview",
-      "title": "Overview",
+      "id": "introduction",
+      "title": "Introduction",
       "slides": [
         {
-          "file": "slides/overview/changing-medigap.md"
+          "file": "slides/introduction/changing-medigap.md"
         },
         {
-          "file": "slides/overview/gir-defined.md"
+          "file": "slides/introduction/gir-defined.md"
         },
         {
-          "file": "slides/overview/legal-framework.md"
+          "file": "slides/introduction/legal-framework.md"
         },
         {
-          "file": "slides/overview/md-enhancements.md"
+          "file": "slides/introduction/md-enhancements.md"
         },
         {
-          "file": "slides/overview/insurer-requirements.md"
+          "file": "slides/introduction/insurer-requirements.md"
         },
         {
-          "file": "slides/overview/limitations.md"
+          "file": "slides/introduction/limitations.md"
         }
       ],
-      "folder": "overview"
+      "folder": "introduction"
     },
     {
       "id": "triggers",

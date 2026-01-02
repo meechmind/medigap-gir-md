@@ -9,7 +9,7 @@ hidden: false
 
 <h2 style="margin-top: 0;">GIR Qualifying Events</h2>
 <p style="font-size: 1.2rem; margin-top: 1rem; margin-bottom: 1.5rem;">
-    Federal and Maryland law create guaranteed issue rights when specific qualifying events occur. Understanding these triggers is essential for counseling beneficiaries.:
+    Federal and Maryland law create guaranteed issue rights when specific qualifying events occur:
     </p>
 <div class="grid-3">
     <div class="trigger-category" style="border-top: 4px solid var(--accent-cool);">

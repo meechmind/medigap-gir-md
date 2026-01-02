@@ -25,7 +25,7 @@ hidden: false
         <p>Insurance Article § 15-909 + COMAR 31.10.06.09-1 implements and enforces GIR.<sup>3</sup></p>
     </div>
 </div>
-<div class="highlight-box" style="margin-top: 2rem; border-color: var(--accent-cool);">
-<p>States may provide protections <em>equal to or stronger than</em> federal minimums.</p>
+<div class="card" style="margin-top: 2rem; padding-bottom: 0rem">
+    <p style="font-size: 1.1rem; color: var(--base);">States may provide protections <em>equal to or stronger than</em> federal minimums.</p>
 </div>
 

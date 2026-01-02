@@ -188,7 +188,7 @@ function wireUpNavigation(visibleSlidesOrdered) {
 
   const slides = Array.from(document.querySelectorAll(".slide"));
   const total = slides.length;
-  const slideLinks = Array.from(document.querySelectorAll(".slide-link"));
+  const slideLinks = Array.from(document.querySelectorAll("#sidebar .slide-link"));
   const chapterHeaders = Array.from(document.querySelectorAll(".chapter-header"));
 
   const idToIndex = new Map(visibleSlidesOrdered.map((s, i) => [s.id, i]));
@@ -219,7 +219,7 @@ function wireUpNavigation(visibleSlidesOrdered) {
 
     slideLinks.forEach((l) => l.classList.remove("active"));
     const activeId = visibleSlidesOrdered[index]?.id;
-    const activeLink = document.querySelector(`.slide-link[data-slide-id="${activeId}"]`);
+    const activeLink = document.querySelector(`#sidebar .slide-link[data-slide-id="${activeId}"]`);
     if (activeLink) {
       activeLink.classList.add("active");
       expandChapterForLink(activeLink);
@@ -250,8 +250,11 @@ function wireUpNavigation(visibleSlidesOrdered) {
     }
   });
 
-  slideLinks.forEach((link) => {
-    link.addEventListener("click", () => showById(link.dataset.slideId));
+  document.addEventListener("click", (e) => {
+    const link = e.target.closest('[data-slide-id]');
+    if (!link) return;
+    e.preventDefault();
+    showById(link.dataset.slideId);
   });
 
   chapterHeaders.forEach((header) => {
