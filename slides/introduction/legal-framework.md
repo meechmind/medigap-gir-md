@@ -22,7 +22,7 @@ hidden: false
     <div class="card" style="border-top: 4px solid var(--secondary);">
         <div class="icon-number" style="background: var(--secondary);">3</div>
         <h3>Maryland Law</h3>
-        <p>Insurance Article § 15-909 + COMAR 31.10.06.09-1 implements and enforces GIR.<sup>3</sup></p>
+        <p>Insurance Article § 15-909 and COMAR 31.10.06.09-1 implements and enforces GIR.<sup>3</sup></p>
     </div>
 </div>
 <div class="card" style="margin-top: 2rem; padding-bottom: 0rem">

@@ -14,21 +14,21 @@ Triggers based on the conduct or status of the insurance carrier.
         <div class="trigger-number">6</div>
         <div class="trigger-text">
             <strong>Bankruptcy</strong>
-            The insurance carrier goes bankrupt<sup>17</sup>
+            The insurance carrier goes bankrupt<sup>15</sup>
         </div>
     </div>
     <div class="trigger-item">
         <div class="trigger-number">7</div>
         <div class="trigger-text">
             <strong>Breach of Contract</strong>
-            The carrier breaches a material term of the contract<sup>17</sup>
+            The carrier breaches a material term of the contract<sup>15</sup>
         </div>
     </div>
     <div class="trigger-item">
         <div class="trigger-number">8</div>
         <div class="trigger-text">
             <strong>Fraud or Misrepresentation</strong>
-            The carrier or insurance producer (agent) materially misrepresented the provisions of the plan in marketing, or committed fraud<sup>17,13</sup>
+            The carrier or insurance producer (agent) materially misrepresented the provisions of the plan in marketing, or committed fraud<sup>15</sup>
         </div>
     </div>
 </div>

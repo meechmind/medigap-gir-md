@@ -352,6 +352,7 @@ init().catch((err) => {
   const pre = document.createElement("pre");
   pre.style.whiteSpace = "pre-wrap";
   pre.style.padding = "1rem";
-  pre.textContent = `Error loading presentation:\n\n${err.stack || err.message || String(err)}`;
+  const msg = [err.message, err.stack].filter(Boolean).join("\n\n");
+  pre.textContent = `Error loading presentation:\n\n${msg || String(err)}`;
   main.prepend(pre);
 });

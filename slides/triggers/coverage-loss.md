@@ -27,7 +27,7 @@ Policyholders have a GIR if they lose certain types of coverage <span class="emp
         <div class="trigger-number">3</div>
         <div class="trigger-text">
             <strong>Moved Out of Service Area</strong>
-                 Beneficiary moves out of the service area of their Medicare Advantage, <span class="tooltip" data-tip="Medigap plan with network restrictions">Medicare Select</span>, or PACE plan.<sup>12?</sup>
+                 Beneficiary moves out of the service area of their Medicare Advantage, <span class="tooltip" data-tip="Medigap plan with network restrictions">Medicare Select</span>, or PACE plan.<sup>12</sup>
         </div>
     </div>
 </div>

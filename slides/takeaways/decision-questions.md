@@ -2,7 +2,7 @@
 id: decision-questions
 label: Decision Questions
 title: When In Doubt, Ask These Questions
-hidden: false
+hidden: true
 ---
 
 

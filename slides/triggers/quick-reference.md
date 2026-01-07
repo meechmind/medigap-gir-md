@@ -29,7 +29,7 @@ hidden: false
             <td>Any issuer</td>
             <td>Starts: later of notice/claim denial OR coverage end; ends: 63 days after termination/denial</td></tr>
         <tr><td>3</td>
-            <td>MA/Select/PACE plan terminates or exits area</td>
+            <td>Medigap/MA/Select/PACE plan terminates or exits area</td>
             <td>A, B, (C or D*), (F or G*), K, L</td>
             <td>Any issuer</td>
             <td>Starts: termination notice; ends: 63 days after termination</td></tr>

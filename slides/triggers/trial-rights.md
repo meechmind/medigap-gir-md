@@ -18,7 +18,7 @@ There are specific triggers designed to allow beneficiaries to try Medicare Adva
         <div class="trigger-number">4</div>
             <div class="trigger-text">
             <strong>Had Medigap Before</strong>
-                Terminated Medigap, enrolled in MA, PACE, or Medicare Select <em>for the first time</em>, then disenrolled within the first year.<sup>15</sup>
+                Terminated Medigap, enrolled in MA, PACE, or Medicare Select <em>for the first time</em>, then disenrolled within the first year.<sup>13</sup>
             <p style="color: var(--base); font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 0; font-weight: 500;">Must return to the Medigap policy they had before, if still offered. Otherwise, A, B, C, F, K, L from any issuer.</p>
         </div>
     </div>
@@ -26,7 +26,7 @@ There are specific triggers designed to allow beneficiaries to try Medicare Adva
         <div class="trigger-number">5</div>
         <div class="trigger-text">
             <strong>New to Medicare at 65</strong>
-            Joined MA or PACE when first eligible for Medicare, then switched to Original Medicare within the first year.<sup>16</sup>
+            Joined MA or PACE when first eligible for Medicare, then switched to Original Medicare within the first year.<sup>14</sup>
             <p style="color: var(--base); font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 0; font-weight: 500;">Can choose ANY plan from ANY issuer.</p>
         </div>
     </div>
