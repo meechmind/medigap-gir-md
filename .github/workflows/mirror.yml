@@ -22,5 +22,5 @@ jobs:
           git commit -m "Release: Latest Version"
           git branch -M main
           # REPLACE 'repo-name' with your actual new work repo name
-          git remote add work <https://$>{{ secrets.WORK_REPO_TOKEN }}@github.com/marylandSHIP/repo-name.git
+          git remote add work <https://$>{{ secrets.WORK_REPO_TOKEN }}@github.com/marylandSHIP/medigap-gir-md.git
           git push --force work main
