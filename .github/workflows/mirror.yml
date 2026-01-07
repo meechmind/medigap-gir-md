@@ -1,0 +1,26 @@
+name: Mirror to Work Account
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  mirror:
+    # Only run if NOT in the work organization
+    if: github.repository_owner != 'marylandSHIP'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Clean and Mirror
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          rm -rf .git
+          git init
+          git add .
+          git commit -m "Release: Latest Version"
+          git branch -M main
+          # REPLACE 'repo-name' with your actual new work repo name
+          git remote add work <https://$>{{ secrets.WORK_REPO_TOKEN }}@github.com/marylandSHIP/repo-name.git
+          git push --force work main
