@@ -118,9 +118,6 @@
       "slides": [
         {
           "file": "slides/takeaways/takeaway-summary.md"
-        },
-        {
-          "file": "slides/takeaways/decision-questions.md"
         }
       ],
       "folder": "takeaways"
@@ -129,7 +126,7 @@
       "id": "appendix",
       "title": "Appendix",
       "slides": [
-                {
+        {
           "file": "slides/appendix/birthday-rule-plans.md"
         },
         {

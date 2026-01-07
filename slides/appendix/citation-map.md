@@ -6,6 +6,7 @@ hidden: false
 ---
 
 
+<div class="main-content">
 <h2>Citation Map</h2>
 <div style="overflow-y: auto; max-height: 65vh; margin-top: 1rem;">
 <table class="citation-table">
@@ -46,7 +47,9 @@ hidden: false
 <tr><td>25</td><td>Non-Example: Non-Payment</td><td><a href="https://regs.maryland.gov/us/md/exec/comar/31.10.06.09-1#B(2)" target="_blank">COMAR 31.10.06.09-1(B)(2)(c)(ii)</a></td></tr>
 <tr><td>26</td><td>Non-Example: Dissatisfaction</td><td><a href="https://regs.maryland.gov/us/md/exec/comar/31.10.06.09-1#B(2)" target="_blank">COMAR 31.10.06.09-1(B)(2)(d)</a></td></tr>
 <tr><td>27</td><td>Non-Example: Missed Deadline</td><td><a href="https://regs.maryland.gov/us/md/exec/comar/31.10.06.09-1#C" target="_blank">COMAR 31.10.06.09-1(C)</a></td></tr>
+<tr><td>27</td><td>Birthday Rule Plans (equal or lesser)</td><td><a href="https://insurance.maryland.gov/consumer/documents/publications/medicare-supplement-rate-guide.pdf" target="_blank">Maryland Medicare Supplement Policies Rate Guide</a></td></tr>
 </tbody>
 </table>
+</div>
 </div>
 

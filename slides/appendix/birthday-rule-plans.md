@@ -6,8 +6,8 @@ hidden: false
 classes: []
 ---
 
-<h2>Birthday Rule Plan - Equal or Lesser Value</h2>
-Chart of existing plans and the corresponding plans that have lesser or equal value.
+<h2 style="margin-top: 2rem">Birthday Rule Plan - Equal or Lesser Value</h2>
+<p>Chart of existing plans and the corresponding plans that have lesser or equal value.<sup>28</sup><p>
 <table class="summary-table">
     <thead>
         <tr>
