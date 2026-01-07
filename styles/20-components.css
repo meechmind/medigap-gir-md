@@ -33,6 +33,12 @@
     overflow-y: auto;
 }
 
+@media (max-width: 1000px) {
+  .slide {
+    justify-content: flex-start;
+  }
+}
+
 .slide.active {
     opacity: 1;
     transform: translateX(0);

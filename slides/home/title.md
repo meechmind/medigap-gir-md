@@ -8,6 +8,7 @@ classes:
 ---
 
 
+<div class="title-slide">
 <h1>Medicare Supplement Guaranteed Issue Rights</h1>
 <p class="subtitle">A quick-reference guide to eligibility, time windows, and plan options.</p>
 <div class="badge-row">
@@ -25,4 +26,5 @@ classes:
   </div>
 </div>
 <p class="meta">Maryland State Health Insurance Assistance Program (SHIP) | Updated December 2025</p>
+</div>
 

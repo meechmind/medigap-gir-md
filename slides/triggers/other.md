@@ -22,11 +22,10 @@ hidden: false
             CMS determines MA plan made "significant" change to its provider network.<sup>?</sup>
         </div>
     </div>
+    <div class="card">
+        <p style="margin-bottom: 0">
+            GIR timelines vary. See <a href="#" class="inline-slide-link" data-slide-id="quick-reference">Quick Reference</a>.
+        </p>
     </div>
 </div>
 
-<div class="card">
-    <p style="margin-bottom: 0">
-        GIR timelines vary. See <a href="#" class="inline-slide-link" data-slide-id="quick-reference">Quick Reference</a>.
-    </p>
-</div>

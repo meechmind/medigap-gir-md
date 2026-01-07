@@ -30,9 +30,9 @@ Policyholders have a GIR if they lose certain types of coverage <span class="emp
                  Beneficiary moves out of the service area of their Medicare Advantage, <span class="tooltip" data-tip="Medigap plan with network restrictions">Medicare Select</span>, or PACE plan.<sup>12</sup>
         </div>
     </div>
-</div>
-<div class="card">
-    <p style="margin-bottom: 0">
-        GIR timelines vary. See <a href="#" class="inline-slide-link" data-slide-id="quick-reference">Quick Reference</a>.
-    </p>
+    <div class="card">
+        <p style="margin-bottom: 0">
+            GIR timelines vary. See <a href="#" class="inline-slide-link" data-slide-id="quick-reference">Quick Reference</a>.
+        </p>
+    </div>
 </div>
