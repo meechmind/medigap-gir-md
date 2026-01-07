@@ -3,6 +3,7 @@
     flex: 1;
     position: relative;
     overflow: hidden;
+    container-type: inline-size;
 }
 
 .slide-counter {
@@ -66,10 +67,31 @@
 }
 
 .slide.title-slide .badge-row {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
+    --card: 180px;
+    --gap: 18px;
+    --pad: 16px;
+
+    display: grid;
+    gap: var(--gap);
     justify-content: center;
+    padding: 0 var(--pad);
+    box-sizing: border-box;
+
+    grid-template-columns: repeat(4, var(--card));
+}
+
+/* If the content area can’t fit 4 cards, drop to 2 */
+@container (max-width: calc(4 * 180px + 3 * 18px + 2 * 16px)) {
+  .slide.title-slide .badge-row{
+    grid-template-columns: repeat(2, 180px);
+  }
+}
+
+/* If it can’t fit 2 cards, drop to 1 */
+@container (max-width: calc(2 * 180px + 1 * 18px + 2 * 16px)) {
+  .slide.title-slide .badge-row{
+    grid-template-columns: 240px;
+  }
 }
 
 .slide.title-slide .stat-badge {
@@ -77,21 +99,21 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 0.75rem 1.5rem;
     border-radius: 8px;
+    width: 100%;
+    max-width: none;
+    justify-self: stretch;
     text-align: center;
-    min-height: 100px;
-    align-content: center;
-}
-
-.slide.title-slide .stat-badge .number {
-    font-family: 'IBM Plex Serif', serif;
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--accent-warm);
 }
 
 .slide.title-slide .stat-badge .text {
-    font-size: 1.5rem;
+    font-size: clamp(1.15rem, 3vw, 1.5rem);
     color: var(--accent-warm);
+    white-space: normal;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+    line-height: 1.15;
+    text-wrap: wrap;
 }
 
 .slide.title-slide .stat-badge .label {

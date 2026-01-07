@@ -18,7 +18,7 @@ hidden: false
 </thead>
 <tbody>
 <tr>
-    <td>1</td><td>GIR Definition</td><td><a href="https://regs.maryland.gov/us/md/exec/comar/31.10.06.09-1#A(2)" target="_blank">COMAR 31.10.06.09-1(A)(2)</a></td>
+<td>1</td><td>GIR Definition</td><td><a href="https://regs.maryland.gov/us/md/exec/comar/31.10.06.09-1#A(2)" target="_blank">COMAR 31.10.06.09-1(A)(2)</a></td>
 </tr>
 <tr><td>2</td><td>Federal Foundation</td><td><a href="https://www.law.cornell.edu/uscode/text/42/1395ss" target="_blank">42 U.S.C. § 1395ss</a></td></tr>
 <tr><td>3</td><td>Maryland Implementation</td><td><a href="https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gin§ion=15-909" target="_blank">Insurance Article § 15-909</a>; <a href="https://regs.maryland.gov/us/md/exec/comar/31.10.06.09-1" target="_blank">COMAR 31.10.06.09-1</a></td></tr>

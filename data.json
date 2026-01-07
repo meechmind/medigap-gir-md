@@ -5,7 +5,7 @@
     "notes": "Slides are Markdown files with optional frontmatter. Raw HTML in Markdown is supported for advanced layouts."
   },
   "chapters": [
-     {
+    {
       "id": "home",
       "title": "Welcome",
       "slides": [
@@ -129,6 +129,9 @@
       "id": "appendix",
       "title": "Appendix",
       "slides": [
+                {
+          "file": "slides/appendix/birthday-rule-plans.md"
+        },
         {
           "file": "slides/appendix/citation-map.md"
         }
