@@ -1,0 +1,33 @@
+name: Mirror to Work Account
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  mirror:
+    if: github.repository_owner != 'marylandSHIP'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Mirror to Work Repo
+        run: |
+          # Configure Git
+          git config --global user.email "mirror-bot@users.noreply.github.com"
+          git config --global user.name "Mirror Bot"
+
+          # Delete the existing .git folder to "forget" all history and re-initalize new repository
+          rm -rf .git
+          git init
+          git add .
+          git commit -m "Deploy latest version of Maryland Medicare Adventure"
+          git branch -M main
+          
+          # Add the work repo as a remote
+          git remote add work https://${{ secrets.WORK_REPO_TOKEN }}@github.com/marylandSHIP/medigap-gir-md.git
+          
+          # Force push all content to the work repo
+          git push --force work main
