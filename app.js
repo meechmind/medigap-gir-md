@@ -190,6 +190,9 @@ function wireUpNavigation(visibleSlidesOrdered) {
   const total = slides.length;
   const slideLinks = Array.from(document.querySelectorAll("#sidebar .slide-link"));
   const chapterHeaders = Array.from(document.querySelectorAll(".chapter-header"));
+  const container = document.querySelector(".presentation-container");
+  const navToggle = document.getElementById("nav-toggle");
+  const navBackdrop = document.getElementById("nav-backdrop");
 
   const idToIndex = new Map(visibleSlidesOrdered.map((s, i) => [s.id, i]));
 
@@ -215,6 +218,11 @@ function wireUpNavigation(visibleSlidesOrdered) {
     slides[index].classList.add("active");
     currentIndex = index;
 
+    const mainContent = document.querySelector(".main-content");
+    if (mainContent) {
+      mainContent.classList.toggle("title-chrome", slides[index].classList.contains("title-slide"));
+    }
+
     document.getElementById("current-slide").textContent = index + 1;
 
     slideLinks.forEach((l) => l.classList.remove("active"));
@@ -232,6 +240,31 @@ function wireUpNavigation(visibleSlidesOrdered) {
     if (idx == null) return;
     show(idx);
   }
+
+  function setNavOpen(open) {
+    if (!container) return;
+    container.classList.toggle("nav-open", open);
+    if (navToggle) navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+  }
+
+  function isMobileNav() {
+    return window.matchMedia("(max-width: 700px)").matches;
+  }
+
+  if (navToggle) {
+    navToggle.addEventListener("click", () => {
+      const open = !container?.classList.contains("nav-open");
+      setNavOpen(open);
+    });
+  }
+
+  if (navBackdrop) {
+    navBackdrop.addEventListener("click", () => setNavOpen(false));
+  }
+
+  window.addEventListener("resize", () => {
+    if (!isMobileNav()) setNavOpen(false);
+  });
 
   document.addEventListener("keydown", (e) => {
     const key = e.key;
@@ -255,7 +288,34 @@ function wireUpNavigation(visibleSlidesOrdered) {
     if (!link) return;
     e.preventDefault();
     showById(link.dataset.slideId);
+    if (isMobileNav()) setNavOpen(false);
   });
+
+  let touchStartX = 0;
+  let touchStartY = 0;
+  const swipeThreshold = 50;
+  const slidesRoot = document.getElementById("slides-root");
+
+  if (slidesRoot) {
+    slidesRoot.addEventListener("touchstart", (e) => {
+      if (e.touches.length !== 1) return;
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+
+    slidesRoot.addEventListener("touchend", (e) => {
+      if (e.changedTouches.length !== 1) return;
+      const endX = e.changedTouches[0].clientX;
+      const endY = e.changedTouches[0].clientY;
+      const deltaX = endX - touchStartX;
+      const deltaY = endY - touchStartY;
+
+      if (Math.abs(deltaX) > swipeThreshold && Math.abs(deltaX) > Math.abs(deltaY) * 1.2) {
+        if (deltaX < 0) show(currentIndex + 1);
+        else show(currentIndex - 1);
+      }
+    }, { passive: true });
+  }
 
   chapterHeaders.forEach((header) => {
     header.addEventListener("click", () => {

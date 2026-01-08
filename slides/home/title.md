@@ -11,7 +11,7 @@ classes:
 <div class="title-slide">
 <h1>Medicare Supplement Guaranteed Issue Rights</h1>
 <p class="subtitle">A quick-reference guide to eligibility, time windows, and plan options.</p>
-<div class="badge-row">
+<div class="badge-row" style="margin: 1.5rem 0">
   <div class="stat-badge">
     <div class="text">Insurer Obligations</div>
   </div>
@@ -25,6 +25,10 @@ classes:
     <div class="text">Real Scenarios</div>
   </div>
 </div>
-<p class="meta">Maryland State Health Insurance Assistance Program (SHIP) | Updated December 2025</p>
+
+<div class="meta" style="justify-content: flex-start">
+<p>Maryland State Health Insurance Assistance Program (SHIP) | Updated January 2026</p>
+<p style="font-size: .85rem"><em>Navigate with arrow keys or swipe.</em></p>
 </div>
+
 

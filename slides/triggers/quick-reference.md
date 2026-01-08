@@ -7,7 +7,7 @@ hidden: false
 
 
 <h2>Trigger Quick Reference</h2>
-<div style="overflow-y: auto; max-height: 65vh; margin-top: 1rem;">
+<div class="table-wrap">
     <table class="summary-table">
         <thead>
             <tr>
@@ -61,6 +61,11 @@ hidden: false
                 <td>A, B, (C or D*), (F or G*), K, L</td>
                 <td>Same issuer only</td>
                 <td>Begins with issuer notice before Part D; ends 63 days after Part D effective</td></tr>
+            <tr><td>10</td>
+                <td>Significant provider network change (MA only, CMS-approved SEP)</td>
+                <td>A, B, (C or D*), (F or G*), K, L</td>
+                <td>Any issuer</td>
+                <td>60 days before disenroll effective date + 63 days after</td></tr>
         </tbody>
     </table>
 </div>

@@ -16,10 +16,10 @@ hidden: false
         </div>
     </div>
     <div class="trigger-item">
-        <div class="trigger-number">17</div>
+        <div class="trigger-number">10</div>
         <div class="trigger-text">
             <strong>Network Reduction</strong>
-            CMS determines MA plan made "significant" change to its provider network.<sup>?</sup>
+            CMS determines MA plan made "significant" change to its provider network.<sup>17</sup>
         </div>
     </div>
     <div class="card">

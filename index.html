@@ -13,10 +13,17 @@
 <body>
   <div class="presentation-container">
     <nav class="nav-sidebar" id="sidebar"></nav>
+    <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
 
     <main class="main-content">
-      <div class="slide-counter">
-        <span id="current-slide">1</span> / <span id="total-slides">0</span>
+      <div class="slide-chrome">
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-controls="sidebar" aria-expanded="false">Menu</button>
+        <div class="slide-counter">
+          <div class="slide-counter-value">
+            <span id="current-slide">1</span> / <span id="total-slides">0</span>
+          </div>
+          <div class="slide-hint">Use ← / →</div>
+        </div>
       </div>
       <div id="slides-root"></div>
     </main>

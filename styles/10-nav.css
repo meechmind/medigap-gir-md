@@ -1,11 +1,45 @@
 /* Navigation Sidebar */
 .nav-sidebar {
-    width: 280px;
+    width: 260px;
     background: var(--primary);
     color: var(--white);
     overflow-y: auto;
     padding: 2rem 1.5rem;
     flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .nav-sidebar { width: 200px; }
+}
+@media (max-width: 700px) {
+  .nav-sidebar {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: min(80vw, 260px);
+      transform: translateX(-100%);
+      transition: transform 0.2s ease;
+      z-index: 30;
+  }
+  .presentation-container.nav-open .nav-sidebar {
+      transform: translateX(0);
+  }
+  .nav-backdrop {
+      display: block;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+      z-index: 20;
+  }
+  .presentation-container.nav-open .nav-backdrop {
+      opacity: 1;
+      pointer-events: auto;
+  }
 }
 
 .nav-title {
